@@ -28,6 +28,7 @@ $(document).ready(function() {
 
 	        	var div = $("<div>");
 	        		div.addClass("gifDiv");
+	        		div.attr("style", "display: inline-block;");
 
 	        	var p = $("<h4>").text("Rating: " + gifData[j].rating);
 	        		div.append(p);
@@ -64,6 +65,7 @@ $(document).ready(function() {
 
 	function createButtons () {
 		$(".btn-group").empty();
+		
 		for (var i = 0; i < topics.length; i++) {
 			var b = $("<button type='button'>");
 	            b.addClass("btn-success series");
@@ -71,10 +73,9 @@ $(document).ready(function() {
 	            b.text(topics[i]);
 
 				$(".btn-group").append(b);
-
-			
 		};
 	};
+
 	$("#add-tv").on("click", function(event) {
         event.preventDefault();
        
@@ -85,10 +86,6 @@ $(document).ready(function() {
         createButtons();
     });
 
-	// $(document.body).on("click", "img", function() {
-	// 	alert("hey");
-	// });
-	
 	$(document).on("click", ".series", displayGiphy);
 	createButtons();
 });

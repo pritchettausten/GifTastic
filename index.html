@@ -3,29 +3,36 @@
 <head>
 	<title>Gif Tastic</title>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="head">
-			<h1>Gif Generator</h1>
+	<style type="text/css">
+		button,
+		div,
+		form,
+		input {
+		 	margin: 5px;
+		};
+	</style>
+		<div class="container">
+			<div class="head">
+				<h1>TV Show Gif Generator</h1>
+			</div>
+			<div class="btn-group">
+				
+			</div>
+			<div>
+				<form id="movie-form">
+		      		<label for="tv-input">Add The Shows You Enjoy</label>
+		      		<input type="text" id="tv-input">
+					<input id="add-tv" type="submit" value="Submit">
+		    	</form>
+			</div>
+			<div class="gifImages">
+				
+			</div>
 		</div>
-		<div class="btn-group">
-			
-		</div>
-		<div>
-			<form id="movie-form">
-	      		<label for="tv-input">Add The Shows You Enjoy</label>
-	      		<input type="text" id="tv-input">
-				<input id="add-tv" type="submit" value="Submit">
-	    	</form>
-		</div>
-		<div class="gifImages">
-			
-		</div>
-	</div>
 
-	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html> 
